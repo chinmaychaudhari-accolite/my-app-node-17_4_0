@@ -1,0 +1,16 @@
+{{!-- {{md-datepicker
+  placeholder='Enter Date'
+  selectedDate=this.selectedDate
+  dateChanged=(action (mut this.selectedDate))
+  required=true
+}} --}}
+
+<MdDatepicker
+  @placeholder='Enter Date'
+  @selectedDate={{this.selectedDate}}
+  @dateChanged={{action (mut this.selectedDate)}}
+  @required={{true}}
+/>
+
+{{!-- <BootstrapDatepickerComponent @value="02-02-2022" /> --}}
+{{timeseries-chart}}
